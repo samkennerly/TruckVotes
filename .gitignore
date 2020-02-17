@@ -5,10 +5,6 @@
 .fseventsd
 Thumbs.db
 
-# Big data
-/data/*
-!/data/examples
-
 # Caches
 *.egg
 *.egg-info
