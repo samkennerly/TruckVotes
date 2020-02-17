@@ -2,6 +2,11 @@
 
 Examples of [generalized linear regression] in a [Jupyter] notebook.
 
+<img
+  alt="Canyonero"
+  src="https://raw.githubusercontent.com/samkennerly/posters/master/truckvotes.jpeg"
+  title="Unexplained fires are a matter for the courts.">
+
 [generalized linear regression]: https://en.wikipedia.org/wiki/Generalized_linear_model
 [Jupyter]: https://jupyter.org/
 
