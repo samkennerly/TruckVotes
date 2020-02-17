@@ -1,22 +1,22 @@
 """
-Constants and functions for truckvotes.ipynb notebook.
+
 """
 from pathlib import Path
 
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-
+from matplotlib.pyplot import rcParams
 from numpy import log10
+from pandas import DataFrame, Series, read_csv
 from scipy.special import logit
 from scipy.stats import linregress
+from seaborn import regplot
 
-COLORMAP = plt.get_cmap('bwr')
-DATADIR = Path('data').resolve()
+DATADIR = Path(__file__).resolve() / 'data'
 FIGSIZE = (9,3)
-VOTECOLOR = {'Democratic':'blue','Republican':'red','Other':'green'}
 
-plt.rcParams['figure.figsize'] = FIGSIZE
+#COLORMAP = plt.get_cmap('bwr')
+#VOTECOLOR = {'Democratic':'blue','Republican':'red','Other':'green'}
+
+rcParams['figure.figsize'] = FIGSIZE
 
 def read_table(year,name):
     """ DataFrame: Read selected table from selected year. """
@@ -39,7 +39,7 @@ def bar_votes(votes,stacked=True):
 
 def scatter_votes(x,votes):
     for color,series in votes.items():
-        ax = sns.regplot(x,series,color=color)
+        ax = regplot(x,series,color=color)
     ax.set(ylabel='popularity')
 
 def regression(x,y):
