@@ -27,15 +27,3 @@ Based on an original project from August 2015.
 * [FEC votes per state](https://transition.fec.gov/pubrec/fe2012/federalelections2012.shtml)
 * [US Census population estimates per state](https://www.census.gov/popest/data/state/totals/2012/index.html)
 * [US DoT truck registrations per state](https://www.fhwa.dot.gov/policyinformation/statistics/2012/mv9.cfm)
-
-
-## TO DO
-
-- update coordinate transforms in `inspect.ipynb`
-- get 2016 data. save raw data and reprocess in-memory?
-- replace stale README links with new data
-- simplify maths and comments in notebooks
-- test each year against null hypothesis
-- 2020 prediction with *please do not use this* disclaimer
-- explain kingofsnake and `kitchen` script in README
-- publish to portfolio
